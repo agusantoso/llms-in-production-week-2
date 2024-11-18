@@ -47,6 +47,7 @@ def generate_response(input_text: str, guard: gd.Guard) -> None:
 
 def main() -> None:
     guard = get_guard()
+    st.warning("Our model may make mistakes.",icon="⚠️")
     with st.form("my_form"):
         text = st.text_area(
             "Enter text:",
